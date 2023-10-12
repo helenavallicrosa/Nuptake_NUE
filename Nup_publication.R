@@ -519,7 +519,7 @@ nue_mod[[1]]
 xgb.plot.importance(nue_mod[[3]])
 validation(nue_mod) # R2 of validation subset
 
-# Fig. S6 creation and export
+# Fig. S5 creation and export
 im <- nue_mod[[3]]
 im$Feature
 customNames <- c("Altitude", "AM %","Precipitation","Temperature",  "Microbial N stock", "Soil N stock", "Nox deposition", "Soil pH", "Woodiness")
@@ -538,7 +538,7 @@ tiff(filename="~/Desktop/MIT/Recerca/NitUP/Project/v8/Figures/SM/Nue_xgboost_var
 Nue_imp_xgboost
 dev.off()
 
-# Fig. S7 creation and export
+# Fig. S6 creation and export
 varnames <- colnames(nue_mod[[5]][[1]])
 categoric <- varnames[c(1)]
 
